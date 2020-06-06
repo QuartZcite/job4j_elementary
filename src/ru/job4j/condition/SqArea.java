@@ -7,7 +7,7 @@ public class SqArea {
         double l = h * k;
         double rsl = l * h;
 */
-        double rsl = Math.pow((p/(2*(k+1))), 2)*k;
+        double rsl = Math.pow((p / (2 * (k + 1))), 2) * k;
         return rsl;
     }
 
