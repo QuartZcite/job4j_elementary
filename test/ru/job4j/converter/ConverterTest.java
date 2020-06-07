@@ -2,7 +2,7 @@ package ru.job4j.converter;
 
 import org.junit.Assert;
 import org.junit.Test;
-import junit.framework.TestCase;
+//import junit.framework.TestCase;
 
 //public class ConverterTest extends TestCase {
 public class ConverterTest {
