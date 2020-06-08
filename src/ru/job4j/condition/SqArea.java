@@ -1,5 +1,9 @@
 package ru.job4j.condition;
 
+//площадь прямоугольника
+
+@SuppressWarnings("UnnecessaryLocalVariable")
+
 public class SqArea {
     public static double square(int p, int k) {
 /*
