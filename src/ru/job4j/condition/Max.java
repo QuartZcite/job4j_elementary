@@ -6,8 +6,8 @@ public class Max {
 //       String result = "left = right = " +left;
  //       String result = left > right ? "left are max: " + left : "right are max: " + right;
 //        if (left == right) result= "left = right = " +left;
-        int result = left > right ? left : right;
-        return result;
+//        int result = left > right ? left : right;
+        return left > right ? left : right;
     }
 
     public  static void main(String[] args) {
