@@ -5,9 +5,9 @@ import ru.job4j.condition.Triangle;
 public class Factorial {
     public static int calc(int num) {
         int result = 1;
-        for (int index = 1; index <= num;) {
+        for (int index = 1; index <= num; index++) {
             result = result * index;
-            index++;
+
         }
         return result;
     }
