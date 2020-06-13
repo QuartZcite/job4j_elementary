@@ -8,15 +8,10 @@ public class CheckPrimeNumber {
 
         boolean natNum = number > 1;
         for (int index = 2; index < number; index++) {
-
-
             if ((number % index) == 0) {
                 natNum = false;
                 break;
-
             }
-
-
         }
     return natNum;
     }
