@@ -20,6 +20,14 @@ public class MatrixCheck {
                 break;
             }
         }
+/*
+        for (int i : board[column]) {
+            if (board[column] != 'X') {
+                result = false;
+                break;
+            }
+        }
+ */
         return result;
     }
 // заполнение из диагонали матрицы
@@ -36,7 +44,9 @@ public class MatrixCheck {
         for (int index = 0; index < board.length; index++) {
             if (board[index][index] == 'X') {
                 result = (MatrixCheck.monoHorizontal(board, index) || MatrixCheck.monoVertical(board, index));
-                break;
+                if (result) {
+                    break;
+                }
             }
         }
         return result;
