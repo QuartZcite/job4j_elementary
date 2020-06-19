@@ -14,27 +14,6 @@ public class MatrixCheck {
 // тест на вертикальный ряд
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
-/*        for (int i = 0; i < board.length; i++) {
-            if (board[i][column] != 'X') {
-                result = false;
-                break;
-            }
-        }
-    public static void main(String[] args) {
-        char[][] input = {
-                    {'r', 'r', 'X', 'r', 'r'},
-                    {'r', 'r', 'X', 'r', 'r'},
-                    {'r', 'r', 'X', 'r', 'r'},
-                    {'r', 'r', 'X', 'r', 'r'},
-                    {'r', 'r', 'X', 'r', 'r'},
-
-            };
-        for (char x[] : input) {
-//            for (char y : x)
-            System.out.println(x[2]);
-            if (x)
-        }
-*/
         for (char[] iArray : board) {
             if (iArray[column] != 'X') {
                 result = false;
