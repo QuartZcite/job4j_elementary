@@ -1,6 +1,12 @@
 package ru.job4j.array;
-// тест на горизонтальный ряд
+/**
+ * Класс для проверки двухмерных массивов на моноряд.
+ * @author DZN
+ * @version 0.0
+ */
+
 public class MatrixCheck {
+    /*** метод для проверки на горизонтальный моноряд */
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
         for (int i = 0; i < board[row].length; i++) {
@@ -11,7 +17,7 @@ public class MatrixCheck {
         }
         return result;
     }
-// тест на вертикальный ряд
+    /*** метод для проверки на горизонтальный моноряд */
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (char[] iArray : board) {
@@ -23,7 +29,7 @@ public class MatrixCheck {
 
         return result;
     }
-// заполнение из диагонали матрицы
+    /*** метод для проверки на заполнение по диагонали */
     public static char[] extractDiagonal(char[][] board) {
         char[] rsl = new char[board.length];
         for (int index = 0; index < board.length; index++) {
@@ -31,7 +37,7 @@ public class MatrixCheck {
         }
         return rsl;
     }
-// тест на комбинацию в сокобан (6,4,7)
+    /*** метод для проверки на горизонтальный и вертикальный моноряд */
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int index = 0; index < board.length; index++) {

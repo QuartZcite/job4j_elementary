@@ -9,7 +9,6 @@ public class BarleyBreak {
             for (int k = 0; k < array[i].length; k++) {
                 array[i][k] = num;
                 num++;
-//                array[i][k] = (i + 1) + (k + 1);
                 System.out.print(array[i][k] + " ");
 
             }

@@ -1,11 +1,13 @@
 package ru.job4j.array;
-
+/**
+ * Класс для создания квадратного массива и заполнения произведением индексов ячеек int.
+ * @author DZN
+ * @version 0.0
+ */
 public class Square {
     public static int[] calculate(int bound) {
         int[] rst = new int[bound];
-        /* заполнить массив через цикл элементами от 0 до bound , возведенными в квадрат */
         for (int i = 0; i < rst.length; i++) {
-//            rst[i] = Math.pow(i, 2);
             rst[i] = i * i;
         }
         return rst;
@@ -13,8 +15,8 @@ public class Square {
 
     public static void main(String[] args) {
         int[] array = calculate(4);
-        for (int index = 0; index < array.length; index++) {
-            System.out.println(array[index]);
+        for (int index : array) {
+            System.out.println(index);
         }
     }
 }

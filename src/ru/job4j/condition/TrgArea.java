@@ -1,9 +1,5 @@
 package ru.job4j.condition;
-
-//площадь треугольника
-
-@SuppressWarnings("UnnecessaryLocalVariable")
-
+/*** площадь треугольника */
 public class TrgArea {
     public static double area(double a, double b, double c) {
         double p = (a + b + c) / 2;
