@@ -10,19 +10,35 @@ public class PointTest {
 
     @Test
     public void whenDist0() {
-        Point a = new Point(1, 1);
-        Point b = new Point(1, 1);
+        /* Входные параметры. */
+        int x1 = 1;
+        int y1 = 1;
+        int x2 = 1;
+        int y2 = 1;
+        /* ожидаемое значение. Это всегда одна переменная. */
         double expected = 0;
-        double out = a.distance(b);
+        /* вызов метода, который хотим проверить. */
+        /* Результат вычисления. Это всегда одна переменная. */
+        double out = Point.distance(x1, y1, x2, y2);
+        /* сравнение полученного значения с ожидаемым */
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void whenDist5NegativeInput() {
-        Point a = new Point(-5, 0);
-        Point b = new Point(0, 0);
+        /* Входные параметры. */
+        int x1 = -5;
+        int y1 = 0;
+        int x2 = 0;
+        int y2 = 0;
+        /* ожидаемое значение. Это всегда одна переменная. */
         double expected = 5;
-        double out = a.distance(b);
+        /* вызов метода, который хотим проверить. */
+        /* Результат вычисления. Это всегда одна переменная. */
+        double out = Point.distance(x1, y1, x2, y2);
+        /* сравнение полученного значения с ожидаемым */
         Assert.assertEquals(expected, out, 0.01);
     }
+
+
 }
