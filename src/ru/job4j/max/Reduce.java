@@ -3,13 +3,13 @@ package ru.job4j.max;
 public class Reduce {
     private int[] array;
 
-    public void to(int[] array2) {
-        array = array2;
+    public void to(int[] array) {
+        this.array = array;
     }
 
     public void print() {
-        for (int index = 0; index < array.length; index++) {
-            System.out.println(array[index]);
+        for (int index : array) {
+            System.out.println(index);
         }
     }
 
