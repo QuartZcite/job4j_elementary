@@ -6,7 +6,11 @@ public class Max {
         return left > right ? left : right;
     }
 
-    public  static void main(String[] args) {
-        System.out.println(Max.max(2, 12));
+    public static int max(int x1, int x2, int x3) {
+        return max(x1, x2) > x3 ? max(x1, x2) : x3;
+    }
+
+    public static int max(int x1, int x2, int x3, int x4) {
+        return max(x1, x2) > max(x3, x4) ? max(x1, x2) : max(x3, x4);
     }
 }
