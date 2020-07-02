@@ -1,4 +1,7 @@
 package ru.job4j.array;
+
+import ru.job4j.pojo.Book;
+
 /**
  * Класс для замены ячеек в массиве
  * @author DZN
@@ -15,6 +18,14 @@ public class SwitchArray {
     /*** метод для обмена значениями между двух ячеек в массиве типа String */
     public static String[] swapString(String[] array, int source, int dest) {
         String temp = array[dest];
+        array[dest] = array[source];
+        array[source] = temp;
+        return array;
+    }
+
+    /*** метод для обмена значениями между двух ячеек в массиве типа Book */
+    public static Book[] swapBook(Book[] array, int source, int dest) {
+        Book temp = array[dest];
         array[dest] = array[source];
         array[source] = temp;
         return array;

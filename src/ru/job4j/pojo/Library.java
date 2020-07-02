@@ -1,5 +1,7 @@
 package ru.job4j.pojo;
 
+import ru.job4j.array.SwitchArray;
+
 public class Library {
     public static void main(String[] args) {
         Book book1 = new Book("Дозор", 200);
@@ -21,5 +23,10 @@ public class Library {
                     //break;
                     }
                 }
+        System.out.println(System.lineSeparator() + "Переставим книги:");
+        SwitchArray.swapBook(bookshelf, 0, 3);
+        for (Book i : bookshelf) {
+            System.out.println(i.getName() + ", " + i.getPages() + " pages.");
+        }
     }
 }
