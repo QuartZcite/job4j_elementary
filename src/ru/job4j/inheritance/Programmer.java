@@ -8,7 +8,7 @@ public class Programmer extends Engineer {
         return lang;
     }
 
-    public String MakeProgramm() {
+    public String makeProgramm() {
         return programm;
     }
 }

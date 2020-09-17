@@ -12,7 +12,7 @@ public class Dentist extends Doctor {
         return cost;
     }
 
-    public double Therapy() {
+    public double therapy() {
         return cost;
     }
 

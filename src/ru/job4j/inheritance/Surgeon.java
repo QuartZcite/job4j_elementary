@@ -10,7 +10,7 @@ public class Surgeon extends Doctor {
         return diagnosis;
     }
 
-    public String Operation() {
+    public String operation() {
         return result;
     }
 }

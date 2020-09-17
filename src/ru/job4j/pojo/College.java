@@ -10,8 +10,8 @@ public class College {
         student.setIntro(new Date());
 
 
-        System.out.println(student.getFio() + " are student in group - " + student.getGroup() +
-                " : " + student.getIntro());
+        System.out.println(student.getFio() + " are student in group - " + student.getGroup()
+                + " : " + student.getIntro());
     }
 }
 

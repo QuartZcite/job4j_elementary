@@ -8,6 +8,6 @@ public class Doctor extends Profession {
         return pacient;
     }
 
-    public void DiagnosisHealf(Pacient pacient) {
+    public void diagnosisHealf(Pacient pacient) {
     }
 }
