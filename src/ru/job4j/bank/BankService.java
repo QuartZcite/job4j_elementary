@@ -66,6 +66,17 @@ public class BankService {
         Account srcAcc = findByRequisite(srcPassport, srcRequisite);
         Account destAcc = findByRequisite(destPassport, destRequisite);
         if (srcUser != null
+                && destUser != null
+                && srcAcc != null
+                && destAcc != null
+                && srcAcc.getBalance() >= amount) {
+                srcAcc.setBalance(srcAcc.getBalance() - amount);
+                destAcc.setBalance(destAcc.getBalance() + amount);
+                rsl = true;
+
+        }
+        /*
+        if (srcUser != null
                 & destUser != null
                 & srcAcc != null
                 & destAcc != null) {
@@ -75,6 +86,7 @@ public class BankService {
                 rsl = true;
             }
         }
+         */
         return rsl;
     }
 }
