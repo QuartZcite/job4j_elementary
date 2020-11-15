@@ -40,10 +40,45 @@ public class JobTest {
         assertThat(rsl, lessThan(0));
     }
 
+    @Test
+    public void whenCompatorByNameUP() {
+        Comparator<Job> cmpName = new JobDescByNameUP();
+        int rsl = cmpName.compare(
+                new Job("task 2", 0),
+                new Job("task 1", 1)
+        );
+        assertThat(rsl, greaterThan(0));
+    }
 
+    @Test
+    public void whenCompatorByName() {
+        Comparator<Job> cmpName = new JobDescByName();
+        int rsl = cmpName.compare(
+                new Job("task 2", 0),
+                new Job("task 1", 1)
+        );
+        assertThat(rsl, lessThan(0));
+    }
 
+    @Test
+    public void whenCompatorByPrirityUP() {
+        Comparator<Job> cmpPriority = new JobDescByPriorityUP();
+        int rsl = cmpPriority.compare(
+                new Job("task 2", 0),
+                new Job("task 1", 1)
+        );
+        assertThat(rsl, lessThan(0));
+    }
 
-
+    @Test
+    public void whenCompatorByPririty() {
+        Comparator<Job> cmpPriority = new JobDescByPriority();
+        int rsl = cmpPriority.compare(
+                new Job("task 2", 0),
+                new Job("task 1", 1)
+        );
+        assertThat(rsl, greaterThan(0));
+    }
 
 
 }
